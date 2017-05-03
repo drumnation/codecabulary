@@ -19,9 +19,9 @@ $(document).ready(function() {
       $('#commits').append(
         `<div class="row">
           <div class="col s12">
-            <div class="card blue lighten-2">
+            <div class="card blue lighten-1">
               <div class="card-content white-text">
-                <span class="card-title"><span class="amber-text darken-2-text">${file.filename}</span></span>
+                <span class="card-title"><span class="amber-text darken-4-text"><strong>${file.filename}</strong></span></span>
                 <div class="${i}"><pre></pre></div>
               </div>
               <div class="card-action">

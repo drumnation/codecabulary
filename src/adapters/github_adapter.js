@@ -1,3 +1,5 @@
+
+
 class GithubAdapter {
   constructor(username, repo) {
     this.username = username
@@ -9,7 +11,7 @@ class GithubAdapter {
     return $.ajax({
       url: url,
       beforeSend: function(xhr) {
-        xhr.setRequestHeader("Authorization", "token " + 'bbac7448f0264448f5fe957af412f27af20c02be');
+        xhr.setRequestHeader("Authorization", "token " + '68eab9012d15fdd95dcb30114694872045149bb8');
       },
     })
   }
@@ -19,7 +21,7 @@ class GithubAdapter {
     return $.ajax({
       url: url,
       beforeSend: function(xhr) {
-        xhr.setRequestHeader("Authorization", "token " + 'bbac7448f0264448f5fe957af412f27af20c02be');
+        xhr.setRequestHeader("Authorization", "token " + '68eab9012d15fdd95dcb30114694872045149bb8');
         xhr.setRequestHeader("Accept", "application/vnd.github.v3.raw")
       },
     })
