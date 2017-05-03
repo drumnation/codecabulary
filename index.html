@@ -1,0 +1,102 @@
+<!doctype html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+</head>
+
+<body>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/github_client.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <div class="container">
+    <nav>
+      <div class="nav-wrapper blue lighten-2">
+        <img class="responsive-img" src="question.png" width="50px" height="50px" style="margin-top:7px;margin-left:7px;">
+        <a href="#" class="brand-logo" style="margin-left:5px;">Codecabulary</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="http://learn.co" target="_blank" style="margin-right:20px;">Back to Learn.co</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="card-panel row">
+
+      <div class="center col s12" style="margin-top:20px;">
+        <h4 class="flow-text">Who would you like to learn a new approach from today?</h4>
+        <br><br>
+      </div>
+
+      <div class="col s5" style="padding-right:60px;">
+
+        <div class="center">
+          <h5 class="flow-text">Codecab Finder</h5>
+        </div>
+
+        <form>
+          <div class="input-field">
+            <i class="material-icons prefix" style="margin-top:7px;">account_circle</i>
+            <select id="username" class="browser-default" style="margin-left:40px;margin-right:80px;margin-bottom:10px;">
+              <option value="" disabled selected>Choose a student</option>
+              <option value="hellosylvee">Sylvia Lee</option>
+              <option value="meryldakin">Meryl Dakin</option>
+              <option value="peterchic">Peter Chicarielli</option>
+              <option value="elilyly">Elizabeth Nicholson</option>
+              <option value="annaolsh">Anna Olshevskaia</option>
+              <option value="rweber87">Robert Weber</option>
+              <option value="s-bruce">Sarah Bruce</option>
+              <option value="duncandevs">Duncan Maina</option>
+              <option value="SammySteiner">Sammy Steiner</option>
+              <option value="curtisgreene">Curtis Greene</option>
+              <option value="mega0319">Naz Khan</option>
+              <option value="ethanryan">Ethan Ryan</option>
+              <option value="christopher-hague">Christopher Hague</option>
+              <option value="szharrison">Scott Harrison</option>
+              <option value="dpark926">Daniel Park</option>
+              <option value="orion1981">Charlie Stopek</option>
+              <option value="peteryunkim">Peter Kim</option>
+              <option value="DeUsman">Usman Pervaiz</option>
+              <option value="drumnation">David Mieloch</option>
+              <option value="Runnantina">Runnan Tina Zhong</option>
+              <option value="markdegroat">Mark deGroat</option>
+            </select>
+            <label for="username"></label>
+          </div>
+
+          <div class="input-field" style="margin-top:26px;">
+            <i class="material-icons prefix">subject</i>
+            <label for="username">Enter the lesson repo name</label>
+            <input type="text" id="repo">
+          </div>
+          <div class="center grey-text lighten-5-text" style="margin-top:-10px;">
+            ex. javascript-lazy-loader-web-031317
+          </div>
+        </form>
+
+
+        <div class="center" style="margin-top:20px;">
+          <p><input type="submit" class="amber darken-2 waves-effect waves-light btn" id="compare-commits" value="Absorb Infinite Wisdom"></input></p>
+        </div>
+
+        <div class="center" style="margin-top:20px;">
+          <a href="https://github.com/learn-co-students?utf8=%E2%9C%93&q=031317&type=&language=javascript" target="_blank">Lab names on GitHub</a>
+        </div>
+
+      </div>
+
+      <div class="col s7" style="margin-bottom:20px;">
+        <img class="responsive-img z-depth-4" src="learn_from.jpg">
+      </div>
+
+      <div id="commits"></div>
+
+    </div>
+
+    <script src="src/adapters/github_adapter.js"></script>
+  </div>
+</body>

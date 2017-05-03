@@ -1,0 +1,100 @@
+<!doctype html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+</head>
+
+<body>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/github_client.js"></script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <div class="container">
+    <nav>
+      <div class="nav-wrapper blue lighten-2">
+        <a href="#" class="brand-logo" style="margin-left:20px;">Codecabulary</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="http://learn.co" target="_blank" style="margin-right:20px;">Back to Learn.co</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="card-panel row">
+
+      <div class="center col s12" style="margin-top:20px;">
+        <h4>Who would you like to learn from today?</h4>
+        <br><br><div class="divider"></div><br><br>
+      </div>
+
+      <div class="col s6" style="padding-right:60px;">
+
+        <form>
+          <!-- <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <label for="username">Student GitHub Username</label>
+            <input type="text" id="username">
+          </div> -->
+          <div class="input-field col s12">
+              <select id="username">
+                <option value="" disabled selected>Choose a student</option>
+                <option value="1">hellosylvee</option>
+                <option value="1">meryldakin</option>
+                <option value="1">peterchic</option>
+                <option value="1">elilyly</option>
+                <option value="1">annaolsh</option>
+                <option value="1">rweber87</option>
+                <option value="1">s-bruce</option>
+                <option value="1">duncandevs</option>
+                <option value="1">SammySteiner</option>
+                <option value="1">curtisgreene</option>
+                <option value="1">mega0319</option>
+                <option value="1">ethanryan</option>
+                <option value="1">christopher-hague</option>
+                <option value="1">szharrison</option>
+                <option value="1">dpark926</option>
+                <option value="1">orion1981</option>
+                <option value="1">peteryunkim</option>
+                <option value="1">DeUsman</option>
+                <option value="1">drumnation</option>
+                <option value="1">Runnantina</option>
+                <option value="1">markdegroat</option>
+              </select>
+              <label>Choose a student</label>
+            </div>
+          <div class="input-field">
+            <i class="material-icons prefix">subject</i>
+            <label for="username">Lesson Repo Name</label>
+            <input type="text" id="repo">
+          </div>
+        </form>
+
+        <div class="center">
+          <p><input type="submit" class="waves-effect waves-light btn" id="compare-commits" value="Absorb Infinite Wisdom"></input></p>
+        </div>
+
+        <div id="commits"></div>
+
+      </div>
+
+      <div class="col s6">
+        <img class="responsive-img" src="flatiron-logo.jpg">
+      </div>
+
+      <div class="col s12">
+        <br><br><div class="divider"></div><br><br>
+      </div>
+
+    </div>
+
+    <script src="src/adapters/github_adapter.js"></script>
+  </div>
+</body>
