@@ -1,9 +1,9 @@
 # Codecabulary
-## Retrieve Multi-File Lab Solutions from Flatiron Students
+### Retrieve Multi-File Lab Solutions from Flatiron Students
 
 ![Watch](demo.gif)
 
-### CONCEPT
+## CONCEPT
 
 The Golden Hammer returns a compiled list of all Flatiron Student solutions to 1 single file.  This works great for short problems, but stops being a helpful learning tool when the solution spans multiple files. When comparing more complex solutions you can't be sure that an approach will work if you can't see the other files connected to it. 
 
